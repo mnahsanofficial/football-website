@@ -1,0 +1,138 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+body button{
+    padding: 10px 10px 10px 10px ;
+    width:150px;
+    background-color: palevioletred;
+    border: 1px solid palevioletred;
+    color: white;
+    transition: width 2s;
+}
+/* transition */
+button:hover{
+    width:200px;
+}
+body h1{
+    font-weight: bold;
+}
+
+header{
+    background-color:royalblue;
+}
+/* Navigation style */
+nav a{
+    text-decoration: none;
+    color:white;
+    margin-right: 30px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* Top part */
+.top-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    padding-left: 80px;
+    padding-bottom: 40px;
+
+}
+.top-part img{
+    width: 75%;
+    padding-top: 25px;;
+
+}
+.cup-name{
+    padding-right: 50px;
+    color:white;
+    margin-right: 200px;
+
+}
+/* Player section */
+.first-section{
+    background-color:#dfdbdb;
+
+}
+.player-section{
+    margin-left: 100px;
+    margin-right:100px;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom:100px;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-column-gap:50px ;
+    grid-row-gap: 50px;
+}
+.player-details{
+    background-color:white;
+    border: 1px solid white;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.player-details img{ 
+    width: 100%;
+}
+/* Highlights Section  */
+.highlight{
+    margin-left: 100px;
+    margin-right:100px;
+    padding-left: 50px;
+    padding-bottom:100px;
+    display: flex;
+    justify-content: space-between;
+}
+.highlight h1{
+    font-size:2em;
+}
+.highlight-details{
+    padding-top: 100px;
+    padding-right: 10px;
+
+}
+.highlight img{
+    width: 85%;
+    padding-top: 25px;;
+    padding-left:50px;
+}
+/* Footer part */
+footer{
+    background-color:#dfdbdb;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.footer{
+    text-align: center;
+}
+
+.footer img{
+    width: 25%;
+    padding-bottom: 20px;;
+}
+/* Media queries */
+/* Tablet view */
+@media(max-width:992px){
+    .player-section{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+}
+/* Mobile view */
+@media(max-width:668px){
+    .player-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .highlight,.top-part{
+        flex-direction: column;
+    }
+
+}
